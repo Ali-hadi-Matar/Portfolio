@@ -4,6 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// Add the viewport meta tag programmatically
+const viewportMeta = document.createElement("meta");
+viewportMeta.name = "viewport";
+viewportMeta.content = "width=device-width, initial-scale=1";
+document.head.appendChild(viewportMeta);
+
+// Use ReactDOM.createRoot to render the app
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

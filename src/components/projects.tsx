@@ -17,6 +17,15 @@ const ProjectsContainer = styled.div`
     color: rgb(226 232 240);
     padding-left: 1rem;
   }
+  @media (max-width: 768px) {
+    padding-left: 5px;
+    h3 {
+      font-size: 0.75rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
 `;
 const ProjectsUl = styled.ul`
   list-style-type: none;
@@ -56,6 +65,9 @@ const ProjectsLI = styled.li`
       background: #61dafb;
     }
   }
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const IconLink = styled.a`
@@ -72,6 +84,10 @@ const IconImage = styled.img`
   width: 30px;
   height: 30px;
   padding-left: 3rem;
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const DateStyle = styled.span`

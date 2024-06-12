@@ -34,6 +34,15 @@ const HeaderContainer = styled.header`
     color: #8892b0;
     max-width: 300px;
   }
+  @media (max-width: 992px) {
+    padding-left: 25px;
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
 `;
 
 const LinksContainer = styled.div`
@@ -48,6 +57,9 @@ const MainLink = styled.a<{ isActive: boolean }>`
   font-size: 4rem;
   font-weight: bold;
   cursor: pointer;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const StyledLink = styled.a<{ isActive: boolean }>`
@@ -81,6 +93,9 @@ const StyledLink = styled.a<{ isActive: boolean }>`
       background: #61dafb;
     }
   }
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -101,6 +116,10 @@ const IconLink = styled.a`
 const IconImage = styled.img`
   width: 30px;
   height: 30px;
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const Header: React.FC<HeaderProps> = ({ scrollToSection, activeSection }) => {

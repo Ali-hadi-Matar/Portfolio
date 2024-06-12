@@ -61,6 +61,9 @@ const SkillsLI = styled.li`
       background: #61dafb;
     }
   }
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 
 const Skills = forwardRef<HTMLDivElement>((props, ref) => {

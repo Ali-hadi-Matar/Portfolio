@@ -17,6 +17,10 @@ interface appProps {
 const AppContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 992px) {
+    flex-direction: column; /* Stack the sections vertically on smaller screens */
+  }
 `;
 
 const HeaderSection = styled.div`
@@ -24,6 +28,11 @@ const HeaderSection = styled.div`
   position: fixed;
   height: 100%;
   overflow-y: auto;
+
+  @media (max-width: 992px) {
+    position: static; /* Remove fixed positioning on smaller screens */
+    height: auto; /* Allow the content to determine the height */
+  }
 `;
 
 const MainSection = styled.div`
@@ -31,6 +40,11 @@ const MainSection = styled.div`
   margin-left: 650px;
   padding-top: 80px;
   overflow-y: auto;
+
+  @media (max-width: 992px) {
+    margin-left: 0; /* Remove margin on smaller screens */
+    padding-top: 20px; /* Adjust padding for smaller screens */
+  }
 `;
 
 const App: React.FC<appProps> = () => {

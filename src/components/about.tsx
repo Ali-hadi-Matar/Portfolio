@@ -5,11 +5,18 @@ const AboutStyle = styled.div`
   padding-top: 25px;
   padding-right: 150px;
   color: #8799b9;
+  @media (max-width: 768px) {
+    padding-left: 25px;
+    width: 90%;
+    font-size: 13px;
+  }
 `;
 
 const SpacialWords = styled.span`
   color: rgb(226 232 240);
   margin-right: 5px;
+  @media (max-width: 768px) {
+  }
 `;
 
 const About = forwardRef<HTMLDivElement>((props, ref) => {
