@@ -140,7 +140,8 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection, activeSection }) => {
       </MainLink>
       <h2>Software Engineer</h2>
       <p>
-        I build pixel-perfect, engaging, and accessible digital experiences.
+        Team player with a passion to build things that make people smile. I'm
+        always up for new challenges!
       </p>
       <LinksContainer>
         <StyledLink
